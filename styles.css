@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 300px;
+}
+
+.container {
+  height: 300px;
+  margin: 20px;
+  overflow: hidden;
+  width: 300px;
+}
+
+.containerImage {
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+  width: 100%;
+}
+
+.imageLight {
+  /*Image Light*/
+  background: url("https://www.cuerpomente.com/medio/2020/12/04/como-empezar-bien-el-dia-exatisiarse-con-el-amanecer_527b4733_1200x1200.jpg");
+  background-size: cover;
+}
+
+.containerText {
+  align-items: flex-end;
+  display: flex;
+  height: 100%;
+  justify-content: flex-start;
+  width: 0%;
+}
+
+.textLigth {
+  align-items: center;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: space-around;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.theDay {
+  color: #fff;
+}
+
+.imageLight:hover {
+  transform: scale(1.2);
+}
+.imageLight:hover .textLigth {
+  opacity: 1;
+  width: 100%;
+}
+
+.containerImageImgLight {
+  overflow: hidden;
+}
+
+.imageDark {
+  background: url("https://www.cuerpomente.com/medio/2020/12/04/como-empezar-bien-el-dia-exatisiarse-con-el-amanecer_527b4733_1200x1200.jpg");
+  background-size: cover;
+  filter: brightness(50%);
+}
+
+.textDark {
+  align-items: center;
+
+  background: rgb(239 239 239 / 38%);
+  display: flex;
+  justify-content: space-around;
+  opacity: 0;
+  transition: 0.5s;
+  width: 0%;
+}
+
+.imageDark:hover {
+  transform: scale(1.2);
+}
+.imageDark:hover .textDark {
+  opacity: 1;
+  transition: 0.5s;
+  width: 100%;
+}
+
+/* 
+.imgSun {
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+  width: 100%;
+}
+
+.imgSun:hover {
+  transform: scale(1.2);
+}
+ */
